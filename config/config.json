@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "wp-1-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/wp1/Wp1WebPart.js",
+          "manifest": "./src/webparts/wp1/Wp1WebPart.manifest.json"
+        }
+      ]
+    },
+    "wp-2-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/wp2/Wp2WebPart.js",
+          "manifest": "./src/webparts/wp2/Wp2WebPart.manifest.json"
+        }
+      ]
+    },
+    "wp-birthdays-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/wpBirthdays/WpBirthdaysWebPart.js",
+          "manifest": "./src/webparts/wpBirthdays/WpBirthdaysWebPart.manifest.json"
+        }
+      ]
+    },
+    "modern-calendar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/modernCalendar/ModernCalendarWebPart.js",
+          "manifest": "./src/webparts/modernCalendar/ModernCalendarWebPart.manifest.json"
+        }
+      ]
+    },
+    "wp-test-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/wpTest/WpTestWebPart.js",
+          "manifest": "./src/webparts/wpTest/WpTestWebPart.manifest.json"
+        }
+      ]
+    },
+    "term-set-requester-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/termSetRequester/TermSetRequesterWebPart.js",
+          "manifest": "./src/webparts/termSetRequester/TermSetRequesterWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": "node_modules/jquery/dist/jquery.min.js",
+    "knockout": "node_modules/knockout/build/output/knockout-latest.debug.js"
+  },
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "Wp1WebPartStrings": "lib/webparts/wp1/loc/{locale}.js",
+    "Wp2WebPartStrings": "lib/webparts/wp2/loc/{locale}.js",
+    "WpBirthdaysWebPartStrings": "lib/webparts/wpBirthdays/loc/{locale}.js",
+    "ModernCalendarWebPartStrings": "lib/webparts/modernCalendar/loc/{locale}.js",
+    "WpTestWebPartStrings": "lib/webparts/wpTest/loc/{locale}.js",
+    "TermSetRequesterWebPartStrings": "lib/webparts/termSetRequester/loc/{locale}.js"
+  }
+}

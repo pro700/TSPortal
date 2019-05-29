@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": false,
+    "environment": "spo",
+    "version": "1.7.1",
+    "libraryName": "spfx-portal-app-1",
+    "libraryId": "dfd6a350-c935-4eaa-b850-f48791468d06",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
